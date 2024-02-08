@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(255, 0, 225);
+}
+
+
+
+.header {
+    font-size: 40px;
+}
+#headerOne {color: blue;}

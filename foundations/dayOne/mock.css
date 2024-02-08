@@ -1,0 +1,55 @@
+.logoShoe{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.men{
+    position: fixed;
+    left: 150px;
+    top: 20px;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+.women{
+    position: fixed;
+    left: 220px;
+    top: 20px;
+    color: orangered;
+}
+.boys{
+    position: fixed;
+    top: 20px;
+    left: 340px;
+    color: orangered;
+}
+.girls{
+    position: fixed;
+    top: 20px;
+    left: 420px;
+    color: orangered;
+}
+.customize{
+    position: fixed;
+    top: 20px;
+    left: 500px;
+    color: orangered;
+}
+.help{
+    position: fixed;
+    top: 20px;
+    right: 390px;
+    color: orangered;
+}
+.myAccount{
+    position: fixed;
+    top: 20px;
+    right: 210px;
+    color: orangered;
+}
+.shoppingCart{
+    position: fixed;
+    top: 20px;
+    right: 1px;
+    color: orangered;
+}

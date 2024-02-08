@@ -1,0 +1,71 @@
+.h1{
+    display: block;
+}
+.logoShoe{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: auto;
+}
+.men{
+   
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+.women{
+    position: fixed;
+    left: 220px;
+    top: 20px;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.boys{
+    position: fixed;
+    top: 20px;
+    left: 340px;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.girls{
+    position: fixed;
+    top: 20px;
+    left: 420px;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.customize{
+    position: fixed;
+    top: 20px;
+    left: 500px;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.help{
+    position: fixed;
+    top: 20px;
+    right: 390px;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.myAccount{
+    position: fixed;
+    top: 20px;
+    right: 210px;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.shoppingCart{
+    position: fixed;
+    top: 20px;
+    right: 1px;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}

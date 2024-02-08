@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reege of the MADLIBS</h1>
+    <form id="madlibs">
+        <label>Ur Mom
+            <input type="text" placeholder="Ur Mom Pt2" name="something"/>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="response">Response will go here</p>
+    <script>
+        console.log('Page Loaded');
+        const madlibs = document.querySelector('madlibs');
+        const response = document.querySelector('response');
+        madlibs.addEventListener('submit', function(event){
+            event.preventDefault()
+    </script>
+</body>
+</html>

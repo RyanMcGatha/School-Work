@@ -1,0 +1,28 @@
+:root {
+  --text-color: black;
+  --bg-color: antiquewhite;
+  &.theme-dark {
+    --text-color: white;
+    --bg-color: darkslategrey;
+  }
+}
+
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: black;
+    color: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  .title {
+    color: white;
+  }
+}

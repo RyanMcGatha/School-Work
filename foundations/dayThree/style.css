@@ -1,0 +1,319 @@
+/*coded by ryan mcgatha*/
+body{
+    margin: 0;
+    overflow-x: hidden;
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background: linear-gradient(to right, deeppink,orangered);
+    background-clip: text;
+    color: transparent;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.topLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+}
+
+.logoShoe{
+    height: 25px;
+    width: 45px;
+}
+.topRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 17%;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+}
+.mainPic{
+    background: conic-gradient(orangered, deeppink, orangered, deeppink, orangered,deeppink, orangered);
+    background-size: 5000px 5000px;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    align-items: center;
+    filter: opacity(85%);
+    gap: 75px;
+    animation: rgb 10s infinite linear;
+}
+@keyframes rgb {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 0 100%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+    height: 400px;
+    scale: 125%;
+}
+.textHeader{
+    display: flex;
+    flex-direction: column;
+}
+.quickSneakers{
+    font-size: 50px;
+    background: conic-gradient(deeppink,white);
+    background-size: 2000px 2000px;
+    background-clip: text;
+    color: transparent;
+    font-family: "roboto", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    text-wrap: nowrap;
+}
+
+.price{
+    color: white;
+}
+.season{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    opacity: .6;
+    font-size: small;
+}
+.paragraph{
+display: flex;
+justify-content: space-between;
+}
+.rtr{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 120px;
+    width: fit-content;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    opacity: .6;
+    font-size: small;
+    position: relative;
+    right: 120px;
+    bottom: 25px;
+    text-decoration: underline;
+}
+.qsParagraph{
+    border-top: 1px dashed rgba(0, 0, 0, 0.5);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.5); 
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 420px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+.buyNow{
+    position: relative;
+    left: 100px;
+    bottom: 80px;
+    background: white;
+    color: orangered;
+    width: fit-content;
+    height: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.leftSide{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    scale: 75%;
+}
+#backToAllShoes{ 
+    color: white;
+    font-size: 25px;
+    font-family: 'copperplate';
+    scale: 150%;
+    padding-left: 160px;
+    padding-bottom: 45px;
+}
+.price{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+.midPage{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+.top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 39, 39, 0.5);
+    filter: rgba(255, 69, 0, 0.5);
+    padding-top: 50px;
+    color: orangered;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: 900;
+    margin-left: 205px;
+    margin-right: 245px;
+    background: linear-gradient(to right, deeppink,orangered);
+    background-clip: text;
+    color: transparent;
+}
+.p1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.cH1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    opacity: 50%;
+}
+.p2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.cH2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    opacity: 50%;
+}
+.p3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.cH3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    opacity: 50%;
+}
+.p4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.csParagraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    opacity: 50%;
+}
+
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 50px;
+    background-color: whitesmoke;
+}
+
+.bottomPage{
+    display: flex;
+    flex-direction: column;
+    background: conic-gradient(orangered, deeppink, orangered, deeppink, orangered,deeppink, orangered);
+    background-size: 5000px 5000px;
+    filter: opacity(85%);
+    animation: rgb 10s infinite linear;
+}
+.rShoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+.rShoes img{
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+#bSneaker{
+    order: 3;
+}
+#rSneaker{
+    order: 2;
+}
+.shoeText{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "roboto", Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 25px;
+}
+.shoeText div{
+    width: 200px;
+}
+.cs{
+    position: relative;
+}
+.fs{
+    position: relative;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background: linear-gradient(to right, deeppink,orangered);
+    background-clip: text;
+    color: transparent;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.bottomLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+}
+.logoShoe2{
+    height: 25px;
+    width: 45px;
+}

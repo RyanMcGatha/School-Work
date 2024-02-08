@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Ass Mudic App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div id="dYSound" class="dYSound">Discover your sound</div>
+      <div id="txt" class="txt">
+        Explore milions of tracks and playlists tiored to your taste
+      </div>
+      <form class="form">
+        <p class="title">Register</p>
+        <p class="message">Signup now and get full access to our app.</p>
+        <div class="inputBoxes">
+          <label>
+            <input
+              id="firstName"
+              class="firstName"
+              type="text"
+              placeholder=""
+              required=""
+            />
+            <span>Firstname</span>
+          </label>
+          <label>
+            <input
+              id="lastName"
+              class="lastName"
+              type="text"
+              placeholder=""
+              required=""
+            />
+            <span>Lastname</span>
+          </label>
+          <label>
+            <input
+              id="email"
+              class="email"
+              type="email"
+              placeholder=""
+              required=""
+            />
+            <span>Email</span>
+          </label>
+          <label>
+            <input
+              id="password"
+              class="password"
+              type="password"
+              placeholder=""
+              required=""
+            />
+            <span>Password</span>
+          </label>
+          <label>
+            <input
+              id="confirmPass"
+              class="confirmPass"
+              type="password"
+              placeholder=""
+              required=""
+            />
+            <span>Confirm password</span>
+          </label>
+          <button id="submitBtn" type="button" class="submit">Submit</button>
+          <p class="signin">Already have an acount ? <a href="#">Signin</a></p>
+        </div>
+      </form>
+    </main>
+    <script>
+      "use strict";
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("DOM LOADED");
+        let users = {};
+        const button = document.getElementById("submitBtn");
+        function createUsr() {
+          const fName = document.querySelector("#firstName").value;
+          const last = document.querySelector("#lastName").value;
+          const mail = document.querySelector("#email").value;
+          const pass = document.querySelector("#confirmPass").value;
+          users = {
+            newUser: {
+              firstName: fName,
+              lastName: last,
+              email: mail,
+              password: pass,
+            },
+          };
+          window.open("homePage/index.html", "_self");
+          localStorage.setItem("userStorage", JSON.stringify(users));
+          console.log(users);
+        }
+        button.addEventListener("click", createUsr);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: "AeonikPro", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    #e7cdd3,
+    #e8bcc6,
+    #cde7e6,
+    #e8e0d9,
+    #e7cdd3,
+    #e8e0d9
+  );
+  background-size: 30000% 30000%;
+  animation: bg 30s linear infinite alternate;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2.4rem;
+  box-shadow: 0px 0px 20px inset rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5vh;
+  font-size: 20px;
+  width: 50vw;
+  border-radius: 1.6rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  margin-top: 1vh;
+  mix-blend-mode: overlay;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 5vh;
+  gap: 10px;
+  padding-top: 2vh;
+  width: 50vw;
+  align-self: flex-start;
+}
+
+.txt {
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 0vh;
+  margin: 0;
+  mix-blend-mode: overlay;
+}
+
+.albums {
+  align-self: center;
+  display: flex;
+  overflow-x: hidden;
+  width: 90vw;
+  gap: 3px;
+  border-radius: 1.6rem;
+}
+
+.albums img {
+  height: 20vh;
+  width: 20vh;
+  background-color: wheat;
+  animation: scrollAlbums 5s linear infinite;
+}
+
+.playBar {
+  width: 95vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 1.6rem;
+  margin-top: 50vh;
+}
+
+.nowPlaying {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding-left: 15px;
+}
+
+.txtt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.npTxt {
+  font-size: 14px;
+}
+
+.npTxt2 {
+  font-size: 12px;
+}
+
+.progressBar {
+  flex: 0.9;
+  height: 4px;
+  background-color: white;
+}
+
+.rewind,
+.playPause,
+.skip,
+.volumeControl {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.volumeControl {
+  padding-right: 15px;
+}
+
+.rewind:hover,
+.playPause:hover,
+.skip:hover,
+.volumeControl:hover {
+  color: #ffcc00;
+}
+
+.bottomPage {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  gap: 10vw;
+}
+
+.myPlaylist {
+  height: 60vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  align-items: center;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.pl {
+  font-size: 80px;
+  font-weight: 700;
+  padding-top: 0vh;
+  margin: 0;
+  background: radial-gradient(
+    45% 100% at 50% 50%,
+    #fff 30%,
+    hsla(0, 0%, 100%, 0.35) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+}
+
+.reccomended {
+  height: 60vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6rem;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.rc {
+  font-size: 80px;
+  font-weight: 700;
+  padding-top: 0vh;
+  margin: 0;
+  width: fit-content;
+  mix-blend-mode: overlay;
+}
+
+@keyframes scrollAlbums {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translate(-8vw);
+  }
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
