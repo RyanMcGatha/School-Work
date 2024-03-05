@@ -1,0 +1,18 @@
+#root {
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchBar {
+  margin-top: 2vh;
+  padding: 1vh 1vw;
+  display: flex;
+  width: 50vw;
+  height: 5vh;
+  color: white;
+}
